@@ -22,6 +22,7 @@ h2 {
 
 body {
   position: relative;
+  width: 100%;
 }
 
 .mobile {
@@ -59,15 +60,14 @@ header {
 }
 
 .menu-items {
-  display: inline-block;
-  margin: 100px 100px;
+  margin: 6.25rem 6.25rem;
   justify-content: space-between;
   color: blue;
 }
 
 .menu-items li {
   display: inline-block;
-  margin: 10px;
+  margin: .75rem;
 }
 
 .menu-items li:hover {
@@ -97,9 +97,10 @@ header {
 
 .learn {
   display: flex;
-  width: 40%;
+  max-width: 40%;
   flex-direction: column;
 }
+
 
 .text {
   display: flex;
@@ -129,7 +130,7 @@ button {
   text-align: center;
   background-color: red;
   width: 80%;
-  height: 80px;
+  height: 5rem;
   border-radius: 5px;
   background-color: white;
   transition: background-color ease-out 800ms, font-size ease-out 500ms;
@@ -176,15 +177,15 @@ button:hover {
 
 
 .info-content h2{
-  margin: 24px 24px 32px 0;
+  margin: 1.5rem 1.5rem 2rem 0;
   font-size: 0.75rem;
 }
 
 .info-content p {
   font-size: 1.5rem;
   padding-bottom: 2rem;
-  margin-right: 30px;
-  margin-top: 20px;
+  margin-right: 2rem;
+  margin-top: 1.25rem;
 }
 
 
@@ -234,7 +235,7 @@ aside.boxes {
 figcaption p {
   font-size: 1.0rem;
   padding-bottom: 2rem;
-  margin-top: 10px;
+  margin-top: .75rem;
 }
 
 
@@ -375,11 +376,11 @@ figcaption .h3:hover {
 }
 
 footer .copyright {
-  margin: 16px 0 30px 24px;
+  margin: 1rem 0 1.75rem 1.5rem;
 }
 
 footer p {
-  margin: 16px 24px 0 24 px;
+  margin: 1rem 1.5rem 0 1.5rem;
 }
 
 footer a {
@@ -392,21 +393,40 @@ footer a {
 
 /*begin media section */
 
-@media only screen and (max-width: 600px)
- html {
-   font-size: 0.75 rem;
- }
- .body{
-   width: 100%;
-   background-color: white;
+@media only screen (min-width:320px)and (max-width: 600px){
+.desktop {
+   display: none;
  }
 
 .mobile-icons {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+ }
 
 .mobile {
-    display: none !important;
+   display: flex;
+}
+
+.bar {
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.learn {
+  max-width: 100%
+}
+
+.boxes {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.graphic {
+  width: 100%
+}
 }
